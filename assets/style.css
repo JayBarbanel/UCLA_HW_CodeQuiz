@@ -34,20 +34,30 @@ header {
     align-items: center;
 }
 
-.large-font {
+.timerCount {
     font-size: 15px;
     text-align: right;
+    margin-right: 50px;
 }
 
-.timer {
-    height: 100px;
-    width: 100px;
-    padding: 5px;
-    background: #13293d;
-    color: #fff;
+.card {
+    background: radial-gradient(circle, rgb(252, 136, 3) 0%, rgba(29, 17, 1, 0.604) 100%);
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+    margin: auto;
+    padding: 20px;
+    height: 400px;
+    width: 55vw;
+}
+
+.questions {
+    color: white;
+    font-size: 25px;
     text-align: center;
 }
 
-.timer-text {
-    padding: 10px;
+.font-size {
+    text-align: center;
+    margin-top: 45px;
 }
