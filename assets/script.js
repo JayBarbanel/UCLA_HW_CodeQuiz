@@ -1,9 +1,13 @@
-var timerElement = document.querySelector(".timerCount");
+var timerElement = document.querySelector("#timerCount");
 var startButton = document.querySelector(".startButton");
-var questionEl = document.querySelector(".questions");
-var highScore = document.querySelector(".highScore");
+var questionEl = document.querySelector("question");
+var highScore = document.querySelector("#highScore");
 
-var questionEl = [{
+var userScore = 0;
+var timer;
+var timerCount = 60;
+
+var questions = [{
         question: "Question 1: Inside which HTML element do we put the JavaScript?",
         correctAnswer: "optionB",
         answers: {
@@ -48,3 +52,24 @@ var questionEl = [{
 
     }
 ]
+
+function startTimer() {
+    // Sets timer
+    timer = setInterval(function() {
+        timerCount--;
+        timerElement.textContent = timerCount;
+        // Tests if time has run out
+        if (timerCount === 0) {
+            // Clears interval
+            clearInterval(timer);
+        }
+    }, 1000);
+}
+
+
+function startGame() {
+    startTimer()
+}
+
+
+startButton.addEventListener("click", startGame);
