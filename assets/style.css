@@ -1,0 +1,53 @@
+header {
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    font-size: 45px;
+    color: darkgreen;
+    border-style: solid;
+    border-color: #13293d;
+}
+
+.navBar {
+    background-color: #13293d;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.startButton {
+    border-radius: 8px;
+    color: #13293d;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 0.50px;
+    line-height: 16px;
+    max-width: 255px;
+    padding: 30px 53px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    margin: 20px;
+    align-items: center;
+}
+
+.large-font {
+    font-size: 15px;
+    text-align: right;
+}
+
+.timer {
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    background: #13293d;
+    color: #fff;
+    text-align: center;
+}
+
+.timer-text {
+    padding: 10px;
+}
