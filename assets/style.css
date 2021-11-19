@@ -60,10 +60,50 @@ header {
     align-items: center;
 }
 
-.questions {
+#prompt {
     color: rgb(255, 255, 255);
     font-size: 25px;
     text-align: center;
     margin-top: 150px;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+#question {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 150px;
+    align-items: center;
+}
+
+#answer1 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+#answer2 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+#answer3 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+#answer4 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
     align-items: center;
 }

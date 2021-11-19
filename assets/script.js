@@ -1,11 +1,17 @@
-var timerElement = document.querySelector("#timerCount");
+var timerEl = document.querySelector("#timerCount");
 var startButton = document.querySelector(".startButton");
-var questionEl = document.querySelector("question");
-var highScore = document.querySelector("#highScore");
+var questionEl = document.querySelector("#question");
+var highScoreEl = document.querySelector("#highScore");
+var promptEl = document.querySelector("#prompt");
+var answer1El = document.querySelector("#answer1");
+var answer2El = document.querySelector("#answer2");
+var answer3El = document.querySelector("#answer3");
+var answer4El = document.querySelector("#answer4");
+var qContainerEl = document.querySelector("#qContainer");
 
-var userScore = 0;
 var timer;
 var timerCount = 60;
+var currentQuestion = 0;
 
 var questions = [{
         question: "Question 1: Inside which HTML element do we put the JavaScript?",
@@ -37,7 +43,7 @@ function startTimer() {
     // Sets timer
     timer = setInterval(function() {
         timerCount--;
-        timerElement.textContent = timerCount;
+        timerEl.textContent = timerCount;
         // Tests if time has run out
         if (timerCount === 0) {
             // Clears interval
@@ -46,10 +52,24 @@ function startTimer() {
     }, 1000);
 }
 
+function loadQuestion(q) {
+    questionEl.textContent = questions[q].question;
+    answer1El.textContent = questions[q].choices[0];
+    answer2El.textContent = questions[q].choices[1];
+    answer3El.textContent = questions[q].choices[2];
+    answer4El.textContent = questions[q].choices[3];
+    console.log("questionload")
+}
+
 
 function startGame() {
     startTimer()
+    promptEl.classList.add("hide");
+    startButton.classList.add("hide");
+    qContainerEl.classList.remove("hide");
+    loadQuestion(currentQuestion)
 }
+
 
 
 startButton.addEventListener("click", startGame);
