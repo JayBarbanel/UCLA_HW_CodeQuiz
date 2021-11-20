@@ -18,3 +18,7 @@ https://jaybarbanel.github.io/UCLA_HW_CodeQuiz/
 
 https://github.com/JayBarbanel/UCLA_HW_CodeQuiz
 
+![Screen Shot 2021-11-19 at 10 32 26 PM](https://user-images.githubusercontent.com/89555843/142717064-0aaf78fa-00cd-4bd0-931b-219bf4fb7fae.png)
+![Screen Shot 2021-11-19 at 10 32 31 PM](https://user-images.githubusercontent.com/89555843/142717066-3aa01926-03b1-483d-9303-f1269f3beb0c.png)
+![Screen Shot 2021-11-19 at 10 32 39 PM](https://user-images.githubusercontent.com/89555843/142717068-76b4897f-dde0-4b80-bc8e-37edf2ec157b.png)
+![Screen Shot 2021-11-19 at 10 32 47 PM](https://user-images.githubusercontent.com/89555843/142717070-c23fa91a-2171-44e8-ab7e-06dc38015c89.png)
