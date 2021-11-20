@@ -15,6 +15,9 @@ header {
     font-size: 20px;
 }
 
+
+/* this is for the timer which is placed in the top left */
+
 #timerCount {
     Width: 200px;
     Text-align: left;
@@ -23,13 +26,19 @@ header {
     margin-left: 2%;
 }
 
-#highScore {
+
+/* places highscore button on bottom right of card */
+
+#highScores {
     Width: 200px;
     Text-align: right;
     Float: right;
     Display: block;
     margin-right: 2%;
 }
+
+
+/* design and placement for start buttong */
 
 .startButton {
     border-radius: 8px;
@@ -48,6 +57,9 @@ header {
     margin-top: 7%;
 }
 
+
+/* This container is for the background box that questions live in */
+
 .card {
     background: radial-gradient(circle, rgb(252, 136, 3) 0%, rgba(29, 17, 1, 0.604) 100%);
     border: 1px solid #eceff1;
@@ -58,6 +70,9 @@ header {
     height: 603px;
     align-items: center;
 }
+
+
+/* this is the text when you load page, eventually gets hidden */
 
 #prompt {
     color: rgb(255, 255, 255);
@@ -71,6 +86,9 @@ header {
     display: none;
 }
 
+
+/* for all questions */
+
 #question {
     color: rgb(255, 255, 255);
     font-size: 25px;
@@ -78,6 +96,9 @@ header {
     margin-top: 150px;
     align-items: center;
 }
+
+
+/* each answer has its own ID, they have different information in side them and require that they can be called seperate */
 
 #answers {
     color: rgb(255, 255, 255);
@@ -180,6 +201,9 @@ header {
     transition-timing-function: linear;
     margin-top: 5px;
 }
+
+
+/* this ides bullet points from list */
 
 .no-bullet {
     list-style-type: none
