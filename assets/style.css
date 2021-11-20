@@ -34,7 +34,6 @@ header {
 .startButton {
     border-radius: 8px;
     color: #13293d;
-    background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
     cursor: pointer;
     font-size: 20px;
     letter-spacing: 0.50px;
@@ -43,7 +42,6 @@ header {
     padding: 30px 43px;
     text-align: center;
     transition-duration: 0.15s;
-    transition-property: background-color;
     transition-timing-function: linear;
     margin-left: 42%;
     margin-top: 7%;
@@ -56,7 +54,7 @@ header {
     box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
     margin: 75px;
     padding: 20px;
-    height: 400px;
+    height: 603px;
     align-items: center;
 }
 
@@ -80,30 +78,104 @@ header {
     align-items: center;
 }
 
+#answers {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    list-style-type: none;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 0.50px;
+    line-height: 16px;
+    padding: 15px 119px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
 #answer1 {
     color: rgb(255, 255, 255);
     font-size: 25px;
     text-align: center;
+    list-style-type: none;
     align-items: center;
+    border-radius: 8px;
+    color: white;
+    background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 0.50px;
+    line-height: 16px;
+    padding: 15px 105px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
 }
 
 #answer2 {
     color: rgb(255, 255, 255);
     font-size: 25px;
     text-align: center;
+    list-style-type: none;
     align-items: center;
+    border-radius: 8px;
+    color: white;
+    background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 0.50px;
+    line-height: 16px;
+    padding: 15px 119px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    margin-top: 5px;
 }
 
 #answer3 {
     color: rgb(255, 255, 255);
     font-size: 25px;
     text-align: center;
+    list-style-type: none;
     align-items: center;
+    border-radius: 8px;
+    color: white;
+    background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 0.50px;
+    line-height: 16px;
+    padding: 15px 137px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    margin-top: 5px;
 }
 
 #answer4 {
     color: rgb(255, 255, 255);
     font-size: 25px;
     text-align: center;
+    list-style-type: none;
     align-items: center;
+    border-radius: 8px;
+    color: white;
+    background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 0.50px;
+    line-height: 16px;
+    padding: 15px 101px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    margin-top: 5px;
+}
+
+.no-bullet {
+    list-style-type: none
 }

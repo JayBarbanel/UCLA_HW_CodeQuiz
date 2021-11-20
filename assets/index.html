@@ -12,8 +12,9 @@
 <body>
     <header>Welcome to the Code Quiz!</header>
     <section>
+        <!--This is for the placement of the timer count and high score, without having a navbar-->
         <div id="container">
-            <p id="timerCount">60 Seconds Remaining</p>
+            <p id="timerCount">100 Seconds Remaining</p>
             <p id="highScore">High 🏆 Score</p>
         </div>
     </section>
@@ -22,9 +23,10 @@
             <div id="prompt">Try to answer the following code-related questions within the time limit. <br>Keep in mind that incorrect answers willl penalize your score by ten seconds!
             </div>
             <Button class="startButton ">Start Quiz</Button>
+            <!--The hide class is whats making the question and answers not show up on page-->
             <div class="hide" id="qContainer">
                 <h1 id="question">question1</h1>
-                <ul>
+                <ul id="answers">
                     <li id="answer1">answer1</li>
                     <li id="answer2">answer2</li>
                     <li id="answer3">answer3</li>
