@@ -82,6 +82,9 @@ header {
     align-items: center;
 }
 
+
+/* hides questions */
+
 .hide {
     display: none;
 }
