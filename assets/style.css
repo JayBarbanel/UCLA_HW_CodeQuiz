@@ -33,7 +33,8 @@ header {
 
 .startButton {
     border-radius: 8px;
-    color: #13293d;
+    background: radial-gradient(circle, rgb(252, 136, 3) 0%, rgba(29, 17, 1, 0.604) 100%);
+    color: #ffffff;
     cursor: pointer;
     font-size: 20px;
     letter-spacing: 0.50px;
@@ -86,7 +87,7 @@ header {
     align-items: center;
     border-radius: 8px;
     color: white;
-    background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
+    background: radial-gradient(circle, rgb(228, 216, 112) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
     cursor: pointer;
     font-size: 20px;
     letter-spacing: 0.50px;
@@ -98,13 +99,14 @@ header {
 }
 
 #answer1 {
-    color: rgb(255, 255, 255);
+    border: solid;
+    border-color: black;
+    color: rgb(17, 16, 16);
     font-size: 25px;
     text-align: center;
     list-style-type: none;
     align-items: center;
     border-radius: 8px;
-    color: white;
     background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
     cursor: pointer;
     font-size: 20px;
@@ -117,13 +119,14 @@ header {
 }
 
 #answer2 {
-    color: rgb(255, 255, 255);
+    border: solid;
+    border-color: black;
+    color: rgb(17, 16, 16);
     font-size: 25px;
     text-align: center;
     list-style-type: none;
     align-items: center;
     border-radius: 8px;
-    color: white;
     background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
     cursor: pointer;
     font-size: 20px;
@@ -137,13 +140,14 @@ header {
 }
 
 #answer3 {
-    color: rgb(255, 255, 255);
+    border: solid;
+    border-color: black;
+    color: rgb(17, 16, 16);
     font-size: 25px;
     text-align: center;
     list-style-type: none;
     align-items: center;
     border-radius: 8px;
-    color: white;
     background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
     cursor: pointer;
     font-size: 20px;
@@ -157,13 +161,14 @@ header {
 }
 
 #answer4 {
-    color: rgb(255, 255, 255);
+    border: solid;
+    border-color: black;
+    color: rgb(17, 16, 16);
     font-size: 25px;
     text-align: center;
     list-style-type: none;
     align-items: center;
     border-radius: 8px;
-    color: white;
     background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 96, 33, 0.9542191876750701) 100%);
     cursor: pointer;
     font-size: 20px;
@@ -178,4 +183,13 @@ header {
 
 .no-bullet {
     list-style-type: none
+}
+
+#score {
+    display: none;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    text-align: center;
+    align-items: center;
+    margin: 12%;
 }

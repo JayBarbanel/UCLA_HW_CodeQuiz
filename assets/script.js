@@ -11,11 +11,13 @@ var answer3El = document.querySelector("#answer3");
 var answer4El = document.querySelector("#answer4");
 var qContainerEl = document.querySelector("#qContainer");
 var answersEl = document.querySelector("#answers")
+var scoreEl = document.querySelector("#score")
 
 // Global variables 
 var timer;
-var timerCount = 100;
+var timerCount = 80;
 var currentQuestion = 0;
+var score = 0;
 
 
 // Questions, choices and answers 
@@ -26,18 +28,18 @@ var questions = [{
     },
     {
         question: "Question 2: How to write an IF statement in JavaScript",
-        choices: ["if (i==f", "if i==5 then", "if i = 5", "if i = 5 then"],
+        choices: ["if (i==5)", "if i==5 then", "if i = 5", "if i = 5 then"],
         answers: "if (i==5)"
 
     },
     {
         question: "How does a FOR loop start?",
-        choices: ["for i = i to 5", "for (i<= 5; i++", "for (i=0; i<=5;i++", "for (i=0;i<=f"],
-        answers: "for (i=0: i<=5;i++"
+        choices: ["for i = i to 5", "for (i<= 5; i++", "for (i=0: i<=5;i++)", "for (i=0;i<=f"],
+        answers: "for (i=0: i<=5;i++)"
 
     },
     {
-        question: "How do you aadd a comment in JavaScript?",
+        question: "How do you add a comment in JavaScript?",
         choices: ["<--!This is a comment-->", "__This is a comment", "Comment-here", "//This is a comment"],
         answers: "//This is a comment"
     },
@@ -83,7 +85,7 @@ function startGame() {
 }
 
 
-
+// This is my addEventListener to start the game
 startButton.addEventListener("click", startGame);
 answersEl.addEventListener("click", function(event) {
     console.log(event.target.value)
@@ -91,23 +93,23 @@ answersEl.addEventListener("click", function(event) {
         var answer = event.target.getAttribute("data-answer");
         console.log(answer);
         if (answer === questions[currentQuestion].answers) {
+            score++
             // loadQuestion(currentQuestion)
             console.log("correct")
         } else {
             timerCount -= 10;
             console.log("wrong");
-            alert("Wrong answer, time deducted by 10 seconds")
+            alert("Yo! That's not the right answer, gotta cut down your timer by 10 seconds, sorry!")
         }
         currentQuestion++
-        loadQuestion(currentQuestion)
+        console.log(currentQuestion, questions.length)
+        if (currentQuestion >= questions.length) {
+            console.log("Quiz is done")
+            scoreEl.style.display = "block"
+            qContainerEl.classList.add("hide");
+        } else(loadQuestion(currentQuestion));
+
     }
 
+
 })
-
-
-
-// Need to create a function that allowes you to select an answer button
-// Need the answer selected to appear true or false 
-// Then need to go to the next question 
-// Or i need it to show false, redude time from the clock 
-// Then go to next question
